@@ -1,6 +1,6 @@
-name: 'Minecraft Version Manifest Info'
-description: 'A GitHub action to get infos about minecraft version manifest.'
-author: 'Mqxx'
+name: 'Template Deno GitHub Actions'
+description: 'Project Template for Deno GitHub Actions.'
+author: 'Author'
 inputs:
   custom-input:
     description: 'Description.'
