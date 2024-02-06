@@ -4,10 +4,10 @@
   "version": "0.1.0",
   "author": "Author",
   "private": true,
-  "homepage": "<URL>",
+  "homepage": "https://github.com/DenoPlayground/Template-Action",
   "repository": {
     "type": "git",
-    "url": "git+<URL>.git"
+    "url": "git+https://github.com/DenoPlayground/Template-Action.git"
   },
   "exports": {
     ".": "./dist/index.js"
