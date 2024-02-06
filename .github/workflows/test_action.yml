@@ -23,4 +23,4 @@ jobs:
       - name: 'Test Action'
         uses: DenoPlayground/Template-Action@main
         with:
-          manifest-url: 'Test123'
+          custom-input: 'Test123'
