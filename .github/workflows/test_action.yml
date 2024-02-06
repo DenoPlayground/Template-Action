@@ -21,6 +21,6 @@ jobs:
         uses: actions/checkout@v4
       
       - name: 'Test Action'
-        uses: Datapack-Registry/minecraft-manifest@main
+        uses: DenoPlayground/Template-Action@main
         with:
           manifest-url: 'Test123'
