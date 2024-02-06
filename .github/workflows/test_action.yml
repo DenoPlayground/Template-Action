@@ -1,0 +1,26 @@
+name: 'Test Action'
+
+on:
+  push:
+    branches:
+      - 'main'
+
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  checks: write
+
+jobs:
+  test:
+    name: 'Test Action'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 'Setup Repository (${{github.event.repository.name}})'
+        uses: actions/checkout@v4
+      
+      - name: 'Test Action'
+        uses: Datapack-Registry/minecraft-manifest@main
+        with:
+          manifest-url: 'Test123'
