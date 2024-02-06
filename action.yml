@@ -1,0 +1,16 @@
+name: 'Minecraft Version Manifest Info'
+description: 'A GitHub action to get infos about minecraft version manifest.'
+author: 'Mqxx'
+inputs:
+  custom-input:
+    description: 'Description.'
+    default: 'DefaultValue'
+    required: false
+
+outputs:
+  custom-output:
+    description: 'Description.'
+
+runs:
+  using: 'node20'
+  main: 'dist/bundle.min.js'
