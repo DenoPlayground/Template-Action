@@ -15,16 +15,16 @@ inputs:
 
   custom-list-input:
     description: 'This is the description for a custom input.'
-    default:
-      - 'Item1'
-      - 'Item2'
-      - 'Item3'
+    default: |
+      - Item1
+      - Item2
+      - Item3
 
     required: false
 
   custom-key-value-input:
     description: 'This is the description for a custom input.'
-    default:
+    default: |
       key1: value1
       key2: value2
 
