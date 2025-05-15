@@ -24,4 +24,4 @@ runs:
   args:
     - 'run'
     - '-A'
-    - '/github/workspace/src/index.ts'
+    - './src/index.ts'
