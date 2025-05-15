@@ -3,9 +3,6 @@
     "lint": "deno lint",
     "test": "deno test -A --unstable --check --reload --doc --allow-none --junit-path=\"./report.xml\""
   },
-  "exclude": [
-    "./dist/"
-  ],
   "test": {
     "include": [
       "**/*.test.ts"
@@ -39,7 +36,6 @@
   },
   "compilerOptions": {
     "noImplicitAny": true,
-    "strict": true,
     "lib": [
       "deno.window",
       "deno.ns",
