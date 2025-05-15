@@ -21,6 +21,6 @@ jobs:
         uses: actions/checkout@v4
       
       - name: 'Test Action'
-        uses: DenoPlayground/Template-Action@main
+        uses: './'
         with:
           custom-input: 'Test123'
