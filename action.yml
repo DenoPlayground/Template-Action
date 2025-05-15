@@ -19,5 +19,5 @@ outputs:
 
 runs:
   using: 'docker'
-  image: 'denoland/deno:latest'
+  image: 'docker://denoland/deno:latest'
   entrypoint: 'dist/bundle.min.js'
