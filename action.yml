@@ -8,13 +8,30 @@ branding:
   color: 'green'
 
 inputs:
-  custom-input:
+  custom-text-input:
     description: 'This is the description for a custom input.'
     default: 'DefaultValue'
     required: false
 
+  custom-list-input:
+    description: 'This is the description for a custom input.'
+    default:
+      - 'Item1'
+      - 'Item2'
+      - 'Item3'
+
+    required: false
+
+  custom-key-value-input:
+    description: 'This is the description for a custom input.'
+    default:
+      key1: value1
+      key2: value2
+
+    required: false
+
 outputs:
-  custom-output:
+  custom-text-output:
     description: 'This is the description for a custom output.'
 
 runs:
