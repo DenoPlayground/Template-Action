@@ -24,9 +24,9 @@ jobs:
         id: test
         uses: './'
         with:
-          custom-input: 'Test123'
+          custom-test-input: 'Test123'
       
       - name: 'Test Action output'
         run: |
-          echo "Output: ${{ steps.test.outputs.custom-output }}"
+          echo "Output: ${{ steps.test.outputs.custom-test-output }}"
 
