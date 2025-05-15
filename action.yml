@@ -1,16 +1,23 @@
-name: 'Template Deno GitHub Actions'
+# https://docs.github.com/en/actions/sharing-automations/creating-actions/metadata-syntax-for-github-actions
+
+name: 'Template Action'
 description: 'Project Template for Deno GitHub Actions.'
 author: 'Author'
+branding:
+  icon: 'award'
+  color: 'green'
+
 inputs:
   custom-input:
-    description: 'Description.'
+    description: 'This is the description for a custom input.'
     default: 'DefaultValue'
     required: false
 
 outputs:
   custom-output:
-    description: 'Description.'
+    description: 'This is the description for a custom output.'
 
 runs:
-  using: 'node20'
-  main: 'dist/bundle.min.js'
+  using: 'docker'
+  image: 'denoland/deno:latest'
+  entrypoint: 'dist/bundle.min.js'
