@@ -21,8 +21,9 @@ const tsConfig : esbuild.BuildOptions = {
     './src/index.ts'
   ],
   bundle: true,
-  platform: 'node',
-  target: 'node20',
+  platform: 'browser',
+  target: 'esnext',
+  format: 'esm',
   sourcemap: 'external',
   keepNames: true // IMPORTANT! https://github.com/node-fetch/node-fetch/issues/784#issuecomment-618527886
 }
