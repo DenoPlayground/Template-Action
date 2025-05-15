@@ -20,4 +20,8 @@ outputs:
 runs:
   using: 'docker'
   image: 'docker://denoland/deno:latest'
-  entrypoint: 'dist/bundle.min.js'
+  entrypoint: 'deno'
+  args:
+    - 'run'
+    - '-A'
+    - '/github/workspace/dist/bundle.min.js'
