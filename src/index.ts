@@ -1,8 +1,9 @@
-import * as actionsCore from '@actions/core';
+import actionsCore from '@actions/core';
+import * as yaml from '@std/yaml'
 
 const customTextInput = actionsCore.getInput('custom-text-input');
-const customListInput = actionsCore.getInput('custom-list-input');
-const customKeyValueInput = actionsCore.getInput('custom-key-value-input');
+const customListInput = yaml.parse(actionsCore.getInput('custom-list-input'));
+const customKeyValueInput = yaml.parse(actionsCore.getInput('custom-key-value-input'));
 
 console.log('custom-text-input:', customTextInput);
 console.log('custom-list-input:', customListInput);

@@ -1,9 +1,14 @@
 {
   "version": "5",
   "specifiers": {
+    "jsr:@std/yaml@^1.0.6": "1.0.6",
     "npm:@actions/core@*": "1.11.1",
-    "npm:@types/node@*": "22.12.0",
-    "npm:esbuild@*": "0.25.1"
+    "npm:@types/node@*": "22.12.0"
+  },
+  "jsr": {
+    "@std/yaml@1.0.6": {
+      "integrity": "c9a5a914e1d51c46756cb10e356710035cfa905e713c90d3b711413fd3aead27"
+    }
   },
   "npm": {
     "@actions/core@1.11.1": {
@@ -163,38 +168,6 @@
         "undici-types"
       ]
     },
-    "esbuild@0.25.1": {
-      "integrity": "sha512-BGO5LtrGC7vxnqucAe/rmvKdJllfGaYWdyABvyMoXQlfYMb2bbRuReWR5tEGE//4LcNJj9XrkovTqNYRFZHAMQ==",
-      "optionalDependencies": [
-        "@esbuild/aix-ppc64",
-        "@esbuild/android-arm",
-        "@esbuild/android-arm64",
-        "@esbuild/android-x64",
-        "@esbuild/darwin-arm64",
-        "@esbuild/darwin-x64",
-        "@esbuild/freebsd-arm64",
-        "@esbuild/freebsd-x64",
-        "@esbuild/linux-arm",
-        "@esbuild/linux-arm64",
-        "@esbuild/linux-ia32",
-        "@esbuild/linux-loong64",
-        "@esbuild/linux-mips64el",
-        "@esbuild/linux-ppc64",
-        "@esbuild/linux-riscv64",
-        "@esbuild/linux-s390x",
-        "@esbuild/linux-x64",
-        "@esbuild/netbsd-arm64",
-        "@esbuild/netbsd-x64",
-        "@esbuild/openbsd-arm64",
-        "@esbuild/openbsd-x64",
-        "@esbuild/sunos-x64",
-        "@esbuild/win32-arm64",
-        "@esbuild/win32-ia32",
-        "@esbuild/win32-x64"
-      ],
-      "scripts": true,
-      "bin": true
-    },
     "tunnel@0.0.6": {
       "integrity": "sha512-1h/Lnq9yajKY2PEbBadPXj3VxsDDu844OnaAo52UVmIzIvwwtBPIuNvkjuzBlTWpfJyUbG3ez0KSBibQkj4ojg=="
     },
@@ -251,8 +224,8 @@
   },
   "workspace": {
     "dependencies": [
-      "npm:@actions/core@*",
-      "npm:esbuild@*"
+      "jsr:@std/yaml@^1.0.6",
+      "npm:@actions/core@*"
     ]
   }
 }
