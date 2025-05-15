@@ -20,13 +20,6 @@ jobs:
       - name: 'Setup Repository (${{github.event.repository.name}})'
         uses: actions/checkout@v4
       
-      - name: 'Setup Deno'
-        uses: denoland/setup-deno@v2
-
-      - name: 'Build Action'
-        run: |
-          deno task build
-      
       - name: 'Test Action'
         uses: './'
         with:
