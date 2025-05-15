@@ -15,7 +15,7 @@ const tsConfig : esbuild.BuildOptions = {
   logLevel: args.logLevel ?? 'info',
   legalComments: args.develop ? 'inline' : 'none',
   color: true,
-  minify: (!args.develop) ?? true,
+  minify: args.develop === undefined ? true : args.develop,
   outfile: './dist/bundle.min.js',
   entryPoints: [
     './src/index.ts'
