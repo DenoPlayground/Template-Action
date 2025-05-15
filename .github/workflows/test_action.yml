@@ -20,13 +20,13 @@ jobs:
       - name: 'Setup Repository (${{github.event.repository.name}})'
         uses: actions/checkout@v4
       
-      - name: 'Test Action'
+      - name: 'Test Action with input'
         id: test
         uses: './'
         with:
           custom-input: 'Test123'
       
-      - name: 'Output Test'
+      - name: 'Test Action output'
         run: |
-          echo "Custom Output: ${{ steps.test.outputs.custom-output }}"
+          echo "Output: ${{ steps.test.outputs.custom-output }}"
 
