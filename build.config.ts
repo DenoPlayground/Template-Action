@@ -21,7 +21,7 @@ const tsConfig : esbuild.BuildOptions = {
     './src/index.ts'
   ],
   bundle: true,
-  platform: 'browser',
+  platform: 'node',
   target: 'esnext',
   format: 'esm',
   sourcemap: 'external',
