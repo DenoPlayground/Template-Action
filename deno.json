@@ -41,14 +41,13 @@
     "noImplicitAny": true,
     "strict": true,
     "lib": [
-      "deno.window"
+      "deno.window",
+      "deno.ns",
+      "deno.worker",
+      "webworker"
     ]
   },
-  "unstable": [
-    "sloppy-imports"
-  ],
   "imports": {
-    "@esbuild": "npm:esbuild",
     "@actions/core": "npm:@actions/core"
   }
 }
