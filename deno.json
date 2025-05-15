@@ -48,6 +48,6 @@
   },
   "imports": {
     "@actions/core": "npm:@actions/core",
-    "@std/yaml": "jsr:@std/yaml@^1.0.6"
+    "@std/yaml": "jsr:@std/yaml"
   }
 }
