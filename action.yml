@@ -35,9 +35,4 @@ outputs:
 
 runs:
   using: 'docker'
-  image: 'docker://denoland/deno:latest'
-  entrypoint: 'deno'
-  args:
-    - 'run'
-    - '-A'
-    - './src/index.ts'
+  image: 'Dockerfile'
