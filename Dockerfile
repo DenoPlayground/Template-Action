@@ -6,4 +6,4 @@ COPY . ./
 
 RUN deno task --cwd /app cache
 
-ENTRYPOINT ["deno", "task", "--cwd", "/app", "index"]
+ENTRYPOINT ["deno", "task", "--cwd", "/app", "action"]
